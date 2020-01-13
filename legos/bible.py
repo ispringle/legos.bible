@@ -31,6 +31,9 @@ class Bible(Lego):
 			logger.error('''HTTP GET response code:
 						{}'''.format(r.status_code))
 
+	def get_name(self):
+		return 'Bible'
+
 	def get_help(self):
 		help_text = ('Get Bible references using bible-api.com. ' 
 					'All text uses the WEB translation. ' 
