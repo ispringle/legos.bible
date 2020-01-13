@@ -27,7 +27,7 @@ class Bible(Lego):
 			text = r.json()['text']
 			self.reply(message, reference + ':\n' + text, opts)
 		else:
-			logger.erro('Requests encountered an error.')
+			logger.error('Requests encountered an error.')
 			logger.error('''HTTP GET response code:
 						{}'''.format(r.status_code))
 
